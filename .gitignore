@@ -1,0 +1,9 @@
+/.nv
+
+/lein/*
+!/lein/.gitkeep
+
+/m2/*
+!/m2/.gitkeep
+
+/docker-compose.yml

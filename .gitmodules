@@ -1,0 +1,12 @@
+[submodule "robosight-core"]
+	path = robosight-core
+	url = git@github.com:tail-island/robosight-core.git
+[submodule "robosight-battlefield"]
+	path = robosight-battlefield
+	url = git@github.com:tail-island/robosight-battlefield.git
+[submodule "robosight-visualizer"]
+	path = robosight-visualizer
+	url = git@github.com:tail-island/robosight-visualizer.git
+[submodule "robosight-sample"]
+	path = robosight-sample
+	url = git@github.com:tail-island/robosight-sample.git
