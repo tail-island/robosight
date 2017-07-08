@@ -11,9 +11,12 @@ services:
       - LD_LIBRARY_PATH=/usr/local/nvidia/lib64
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
-      - .:/home/developer
       - ./m2:/home/developer/.m2
       - ./lein:/home/developer/.lein
+      - ./robosight-core:/home/developer/robosight-core
+      - ./robosight-battlefield:/home/developer/robosight-battlefield
+      - ./robosight-visualizer:/home/developer/robosight-visualizer
+      - ./robosight-sample:/home/developer/robosight-sample
       - nvidia_driver_381.22:/usr/local/nvidia
 
 volumes:
