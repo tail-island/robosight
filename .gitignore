@@ -1,5 +1,3 @@
-/.nv
-
 /lein/*
 !/lein/.gitkeep
 
