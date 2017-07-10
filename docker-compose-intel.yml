@@ -8,10 +8,10 @@ services:
     environment:
       - DISPLAY=${DISPLAY}
     volumes:
-      - /tmp/.X11-unix:/tmp/.X11-unix
-      - ./m2:/home/developer/.m2
-      - ./lein:/home/developer/.lein
       - ./robosight-core:/home/developer/robosight-core
       - ./robosight-battlefield:/home/developer/robosight-battlefield
       - ./robosight-visualizer:/home/developer/robosight-visualizer
       - ./robosight-sample:/home/developer/robosight-sample
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./m2:/home/developer/.m2
+      - ./lein:/home/developer/.lein
