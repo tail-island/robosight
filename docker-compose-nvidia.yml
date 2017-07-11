@@ -5,15 +5,13 @@ services:
     build: .
     privileged: true
     command: emacs
+    working_dir: /home/developer/robosight
     environment:
       - DISPLAY=${DISPLAY}
       - PATH=/usr/local/nvidia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
       - LD_LIBRARY_PATH=/usr/local/nvidia/lib64
     volumes:
-      - ./robosight-core:/home/developer/robosight-core
-      - ./robosight-battlefield:/home/developer/robosight-battlefield
-      - ./robosight-visualizer:/home/developer/robosight-visualizer
-      - ./robosight-sample:/home/developer/robosight-sample
+      - .:/home/developer/robosight
       - /tmp/.X11-unix:/tmp/.X11-unix
       - ./m2:/home/developer/.m2
       - ./lein:/home/developer/.lein

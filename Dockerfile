@@ -12,6 +12,3 @@ RUN apt-get update && \
 
 USER developer
 WORKDIR /home/developer
-
-RUN echo "(cd robosight-battlefield && lein run -- \"lein run\" ../robosight-sample \"lein run\" ../robosight-sample) | (cd robosight-visualizer && lein run)" > t && \
-    chmod 755 t
