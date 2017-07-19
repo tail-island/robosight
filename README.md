@@ -123,13 +123,13 @@ $ ./t
 
 ```bash
 $ cd robosight-battlefield
-$ lein uberjar
+$ lein checkouts uberjar
 $ cp ./target/robosight-battlefield-0.1.0-standalone.jar <コピー先>
 ```
 
 ```bash
 $ cd robosight-visualizer
-$ lein uberjar
+$ lein checkouts uberjar
 $ cp ./target/robosight-visualizer-0.1.0-standalone.jar <コピー先>
 ```
 
