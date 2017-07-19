@@ -69,7 +69,7 @@ services:
 
 ※前項の「Dockerコンテナを起動する」を実施した場合は、本項は無視して「Checkout Dependenciesを設定する」に進んでください。
 
-[Leiningen](https://leiningen.org)の「Install」の記述に従ってLeiningenをセットアップしてください（シェル（もしくはバッチ・ファイル）をダウンロードして、パスを通すだけです）。
+[Leiningen](https://leiningen.org)の「Install」の記述に従ってLeiningenをセットアップしてください（シェル・スクリプト（Windowsの場合はバッチ・ファイル）をダウンロードして、パスを通すだけです）。
 
 ### Checkout Dependenciesを設定する
 
