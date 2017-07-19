@@ -133,6 +133,10 @@ $ lein checkouts uberjar
 $ cp ./target/robosight-visualizer-0.1.0-standalone.jar <コピー先>
 ```
 
+## 名称の由来
+
+実際はRobocodeの猿真似なんだけど、前世紀にマイコン少年が熱中したCOMSIGHTへのオマージュでオリジナルなんだよと言い張りたいために、名前を混ぜあわせてrobosightにしてみました。
+
 ## License
 
 Copyright © 2017 OJIMA Ryoji
