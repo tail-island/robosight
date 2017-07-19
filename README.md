@@ -25,7 +25,7 @@ $ git submodule update
 
 ```bash
 $ git clone https://github.com/tail-island/robosight.git
-$ gedit .gitmodules （して、'git'を'https'に変更）
+$ gedit .gitmodules （して、'git'を'https'に変更してください）
 $ git submodule init
 $ git submodule update
 ```
