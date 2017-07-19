@@ -32,7 +32,7 @@ $ git submodule update
 
 ### Dockerコンテナを起動する
 
-※Windowsの場合は、本項は無視して「Leiningenをセットアップする」に進んでください。
+※Linux以外の環境の場合は、本項は無視して「Leiningenをセットアップする」に進んでください。
 
 [Docker](https://www.docker.com)と[Docker Compose](https://docs.docker.com/compose)をインストールしてください。
 
@@ -100,7 +100,7 @@ $ lein install
 
 ### robosightを試してみる
 
-※Linux以外をご使用の場合は、本項は無視して「Leiningenでビルドする」に進んでください。
+※Windowsをご使用の場合は、本項は無視して「Leiningenでビルドする」に進んでください。
 
 テスト用の`robosight-sample`をコンパイルします。
 
