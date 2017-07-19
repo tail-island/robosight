@@ -21,11 +21,11 @@ $ git submodule init
 $ git submodule update
 ```
 
-※ネットワークの制約でgitプロトコルが使用できない場合は、以下の手順で試してみてください。
+ネットワークの制約でgitプロトコルが使用できない場合は、以下の手順を試してみてください。
 
 ```bash
 $ git clone https://github.com/tail-island/robosight.git
-$ vi .gitmodules （して、'git'を'https'に変更）
+$ gedit .gitmodules （して、'git'を'https'に変更）
 $ git submodule init
 $ git submodule update
 ```
@@ -33,7 +33,8 @@ $ git submodule update
 ### Dockerコンテナを起動する
 
 ※Windowsの場合は、本項は無視して「Leiningenをセットアップする」に進んでください。
-※本手順を実施する前に、[Docker](https://www.docker.com)と[Docker Compose](https://docs.docker.com/compose)をインストールしてください。
+
+[Docker](https://www.docker.com)と[Docker Compose](https://docs.docker.com/compose)をインストールしてください。
 
 NvidiaのGPUを使用している場合は`docker-compose-nvidia.yml`を、IntelのGPUを使用している場合は`docker-compose-intel.yml`を（ごめんなさい、ATIは環境を持っていないため作っていません）`docker-compose.yml`にシンボリック・リンクし、`docker-compose build`して`docker-compose run app bash`してください。
 
@@ -44,6 +45,25 @@ $ docker-compose run app bash
 ```
 
 ※2回目以降は、`docker-compose run app bash`の実行だけで大丈夫です。
+
+なお、プロキシを使用する場合は、`docker-compose.yml`を以下に変更して`docker-compose bulid`や`docker-compose run`してください。
+
+```
+#（略）
+
+services:
+  app:
+    build:
+      context: .
+      args:
+        - http_proxy=http://<プロキシのIPアドレス>:<プロキシのポート>
+        - https_proxy=http://<プロキシのIPアドレス>:<プロキシのポート>
+    #（略）
+    environment:
+      - http_proxy=http://<プロキシのIPアドレス>:<プロキシのポート>
+      - https_proxy=http://<プロキシのIPアドレス>:<プロキシのポート>
+      - DISPLAY=${DISPLAY}
+```
 
 ### もしくは、Leiningeをセットアップする
 
@@ -72,6 +92,13 @@ $ ln -s ../../robosight-core .
 ```
 
 ※Windowsの場合は、`ln`の代わりに、管理者権限でCommand Promptを起動して`mklink /D robosight-core ..\..\robosight-core`してください。
+
+上記の作業を実施した場合でも、一度は`robosight-core`で`lein install`してください。
+
+```bash
+$ cd robosight-core
+$ lein install
+```
 
 ### robosightを試してみる
 
