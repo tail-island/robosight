@@ -21,7 +21,7 @@ $ git submodule init
 $ git submodule update
 ```
 
-ネットワークの制約でgitプロトコルが使用できない場合は、以下の手順を試してみてください。
+ネットワーク環境の制約でgitプロトコルが使用できない場合は、以下の手順を試してみてください。
 
 ```bash
 $ git clone https://github.com/tail-island/robosight.git
@@ -36,7 +36,7 @@ $ git submodule update
 
 [Docker](https://www.docker.com)と[Docker Compose](https://docs.docker.com/compose)をインストールしてください。
 
-NvidiaのGPUを使用している場合は`docker-compose-nvidia.yml`を、IntelのGPUを使用している場合は`docker-compose-intel.yml`を（ごめんなさい、ATIは環境を持っていないため作っていません）`docker-compose.yml`にシンボリック・リンクし、`docker-compose build`して`docker-compose run app bash`してください。
+NvidiaのGPUを使用している場合は`docker-compose-nvidia.yml`を、IntelのGPUを使用している場合は`docker-compose-intel.yml`を`docker-compose.yml`にシンボリック・リンクし（ごめんなさい、ATIは環境を持っていないので作っていません）、`docker-compose build`して`docker-compose run app bash`してください。
 
 ```bash
 $ ln -s docker-compose-xxx.yml docker-compose.yml
@@ -82,8 +82,6 @@ $ cd checkouts
 $ ln -s ../../robosight-core .
 ```
 
-※Windowsの場合は、`ln`の代わりに、管理者権限でCommand Promptを起動して`mklink /D robosight-core ..\..\robosight-core`してください。
-
 ```bash
 $ cd robosight-visualizer
 $ mkdir checkouts
@@ -93,7 +91,7 @@ $ ln -s ../../robosight-core .
 
 ※Windowsの場合は、`ln`の代わりに、管理者権限でCommand Promptを起動して`mklink /D robosight-core ..\..\robosight-core`してください。
 
-上記の作業を実施した場合でも、一度は`robosight-core`で`lein install`してください。
+上記の作業を実施した場合でも、一度は`robosight-core`で`lein install`しておいてください。
 
 ```bash
 $ cd robosight-core
@@ -117,7 +115,9 @@ $ lein compile
 $ ./t
 ```
 
-サンプル同士の対戦が始まりすので、ご鑑賞ください。
+サンプル同士の対戦がはじまりすので、ご鑑賞ください。
+
+![robosight](./doc/image/robosight.png)
 
 ### Leiningenでビルドする
 
@@ -132,3 +132,9 @@ $ cd robosight-visualizer
 $ lein uberjar
 $ cp ./target/robosight-visualizer-0.1.0-standalone.jar <コピー先>
 ```
+
+## License
+
+Copyright © 2017 OJIMA Ryoji
+
+Distributed under the Eclipse Public License either version 1.0 or any later version.
