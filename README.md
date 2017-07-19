@@ -33,8 +33,7 @@ $ git submodule update
 ### Dockerコンテナを起動する
 
 ※Linux以外の環境の場合は、本項は無視して「Leiningenをセットアップする」に進んでください。
-
-[Docker](https://www.docker.com)と[Docker Compose](https://docs.docker.com/compose)をインストールしてください。
+※本項の作業を実施する前に、[Docker](https://www.docker.com)と[Docker Compose](https://docs.docker.com/compose)をインストールしてください。
 
 NvidiaのGPUを使用している場合は`docker-compose-nvidia.yml`を、IntelのGPUを使用している場合は`docker-compose-intel.yml`を`docker-compose.yml`にシンボリック・リンクし（ごめんなさい、ATIは環境を持っていないので作っていません）、`docker-compose build`して`docker-compose run app bash`してください。
 
