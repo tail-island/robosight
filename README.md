@@ -100,7 +100,7 @@ $ lein install
 
 ### robosightを試してみる
 
-※Windowsの場合は、本項は無視して「Leiningenでビルドする」に進んでください。
+※Linux以外をご使用の場合は、本項は無視して「Leiningenでビルドする」に進んでください。
 
 テスト用の`robosight-sample`をコンパイルします。
 
@@ -115,7 +115,7 @@ $ lein compile
 $ ./t
 ```
 
-サンプル同士の対戦がはじまりすので、ご鑑賞ください。
+サンプル・プログラムを使用した対戦がはじまりすので、ご鑑賞ください。
 
 ![robosight](./doc/image/robosight.png)
 
