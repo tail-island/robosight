@@ -34,7 +34,7 @@ $ git submodule update
 
 ※Linux以外の環境の場合は、本項は無視して「もしくは、Leiningenをセットアップする」に進んでください。
 
-※本項の作業を実施する前に、[Docker](https://www.docker.com)と[Docker Compose](https://docs.docker.com/compose)をインストールしてください。
+※本項の作業を実施する前に、[Docker](https://www.docker.com)と[Docker Compose](https://docs.docker.com/compose)をインストールしてください。NvidiaのGPUを使用している場合は、[Nvidia Docker](https://github.com/NVIDIA/nvidia-docker)もインストールしてください。Nvidia Dockerが必要となる理由を知りたい方は、[今更だけど、Dockerで開発環境を作ってみた](https://tail-island.github.io/programming/2017/07/11/docker-for-development-container-on-linux.html)を読んでみてください。
 
 NvidiaのGPUを使用している場合は`docker-compose-nvidia.yml`を、IntelのGPUを使用している場合は`docker-compose-intel.yml`を`docker-compose.yml`にシンボリック・リンクし（ごめんなさい、ATIは環境を持っていないので作っていません）、`docker-compose build`して`docker-compose run app bash`してください。
 
