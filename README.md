@@ -98,7 +98,7 @@ $ cd robosight-core
 $ lein install
 ```
 
-なお、プロキシを使用する場合は、`lein install`の前に`http_proxy`と`https_proxy`という2つの環境変数を設定してください。
+なお、プロキシを使用していて、Dockerコンテナを使用していない場合は、`lein install`の前に`http_proxy`と`https_proxy`という2つの環境変数を設定してください。
 
 ```bash
 $ export http_proxy=http://<プロキシーのDNS>:<プロキシーのポート>
