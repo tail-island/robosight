@@ -32,7 +32,7 @@ $ git submodule update
 
 ### Dockerコンテナを起動する
 
-※Linux以外の環境の場合は、本項は無視して「Leiningenをセットアップする」に進んでください。
+※Linux以外の環境の場合は、本項は無視して「もしくは、Leiningenをセットアップする」に進んでください。
 
 ※本項の作業を実施する前に、[Docker](https://www.docker.com)と[Docker Compose](https://docs.docker.com/compose)をインストールしてください。
 
@@ -65,7 +65,7 @@ services:
       - DISPLAY=${DISPLAY}
 ```
 
-### もしくは、Leiningeをセットアップする
+### もしくは、Leiningenをセットアップする
 
 ※前項の「Dockerコンテナを起動する」を実施した場合は、本項は無視して「Checkout Dependenciesを設定する」に進んでください。
 
