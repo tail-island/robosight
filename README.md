@@ -98,6 +98,20 @@ $ cd robosight-core
 $ lein install
 ```
 
+なお、プロキシを使用する場合は、`lein install`の前に`http_proxy`と`https_proxy`という2つの環境変数を設定してください。
+
+```bash
+$ export http_proxy=http://<プロキシーのDNS>:<プロキシーのポート>
+$ export https_proxy=http://<プロキシーのDNS>:<プロキシーのポート>
+```
+
+※Windowsの場合は、以下の手順で環境変数を設定してください。
+
+```bash
+> set http_proxy=http://<プロキシーのDNS>:<プロキシーのポート>
+> set https_proxy=http://<プロキシーのDNS>:<プロキシーのポート>
+```
+
 ### robosightを試してみる
 
 ※Windowsをご使用の場合は、本項は無視して「Leiningenでビルドする」に進んでください。
