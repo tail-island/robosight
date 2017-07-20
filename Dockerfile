@@ -1,4 +1,4 @@
-from rojima1/clojure
+FROM rojima1/clojure
 
 USER root
 WORKDIR /home/root
