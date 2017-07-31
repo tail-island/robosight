@@ -15,8 +15,8 @@ services:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - ./m2:/home/developer/.m2
       - ./lein:/home/developer/.lein
-      - nvidia_driver_381.22:/usr/local/nvidia
+      - nvidia_driver_384.59:/usr/local/nvidia
 
 volumes:
-  nvidia_driver_381.22:
+  nvidia_driver_384.59:
     external: true
